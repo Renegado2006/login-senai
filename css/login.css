@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+:root{
+    --cor--h1--esquerdo: #77ffc0;
+    --cor-h1-direito: #00ff88;
+    --cor-fundo: #201b2c;
+    --cor-imput: #514869;
+    --cor-button: #6fbcaa;
+}
+
+/* display-flex (o flex), serve para colocar de lado,  */
+.login{
+    background-color:var(--cor-fundo);
+    display: flex; 
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-esquerdo{
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--cor--h1--esquerdo);
+    flex-direction: column;
+}
+
+
+
+.login-direito{
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--cor--h1--esquerdo);
+    flex-direction: column;
+}
+    
+
+   
+
+.login-card{
+      align-items: center;
+      background-color: rgb(29, 10, 65);
+      border-radius: 10px;
+      box-shadow: 0px 10px 40px #00000056;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px 35px;
+      width: 60%;
+  }
+
+.login-card > h1{
+    color:var(--cor-h1-direito);
+    font-weight: 800;
+    margin:0;
+    text-transform: uppercase;
+}
+
+.textfield{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+    
+}
+
+.textfield > input{
+    background-color: var(--cor-imput);
+    border: none;
+    border-radius: 10px;
+    color: #f0ffffde;
+    outline: none;
+    width: 100%;
+    padding: 16px;
+    margin: 10px 0px;
+    font-size: 12pt;
+    
+}
+
+.textfield > label{
+    color: #fffff0de;
+}
+
+/* cor do nome escrito dentro do quadrado */
+.textfield input::placeholder{
+    color: #fff9f994
+}
+
+/* cursos a setinha do para indicar onde esta para escrever " | "  */
+/* box-shandow seria o neon de borda */
+.button-login{
+    background-color: var(--cor-button);
+    border:#00e20b;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px -12px #00e20b;
+    color: black;
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 8px 0px;
+    outline: none;
+    padding: 16px 0px;
+    text-transform: uppercase;
+    width: 100%;
+}
+ 
